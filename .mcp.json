@@ -1,13 +1,13 @@
 {
-    "mcpServers": {
-      "shrimp-task-manager": {
-        "command": "node",
-        "args": ["/Users/cothe/projects/mcp-shrimp-task-manager/dist/index.js"],
-        "env": {
-          "DATA_DIR": "/path/to/your/shrimp_data",
-          "TEMPLATES_USE": "en",
-          "ENABLE_GUI": "false"
-        }
+  "mcpServers": {
+    "shrimp-task-manager": {
+      "command": "node",
+      "args": ["/Users/cothe/projects/mcp-shrimp-task-manager/dist/index.js"],
+      "env": {
+        "DATA_DIR": "/path/to/your/shrimp_data",
+        "TEMPLATES_USE": "en",
+        "ENABLE_GUI": "false"
       }
     }
   }
+}

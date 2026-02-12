@@ -49,6 +49,7 @@ const geistSans = Geist_Font({
 ```
 
 CSS 변수로 폰트 적용:
+
 ```css
 font-family: var(--font-geist-sans);
 ```
@@ -56,22 +57,26 @@ font-family: var(--font-geist-sans);
 ### TypeScript 설정
 
 `tsconfig.json`에서 경로 별칭 설정:
+
 - `@/*` → 프로젝트 루트 (`./`)
 
 ## 중요 파일
 
 ### `app/layout.tsx`
+
 - 루트 레이아웃 컴포넌트
 - Geist 폰트 설정 및 CSS 변수 정의
 - 메타데이터 (타이틀, 설명)
 - 자동 다크 모드를 위한 `className` 설정
 
 ### `app/globals.css`
+
 - Tailwind v4 설정 (`@import "tailwindcss";`)
 - `@theme inline` 블록에서 테마 색상 정의
 - CSS 변수를 통한 다크 모드 자동 지원
 
 ### `app/page.tsx`
+
 - 홈 페이지 (Server Component)
 
 ## 개발 가이드
@@ -90,13 +95,13 @@ export default function MyComponent() {
 클라이언트 상태(`useState`, `useEffect` 등)가 필요한 경우:
 
 ```tsx
-'use client';
+"use client";
 
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function InteractiveComponent() {
   const [count, setCount] = useState(0);
-  return <button onClick={() => setCount(c => c + 1)}>{count}</button>;
+  return <button onClick={() => setCount((c) => c + 1)}>{count}</button>;
 }
 ```
 
