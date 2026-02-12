@@ -2,9 +2,7 @@
   "mcpServers": {
     "shrimp-task-manager": {
       "command": "node",
-      "args": [
-        "/Users/cothe/projects/mcp-shrimp-task-manager/dist/index.js"
-      ],
+      "args": ["/Users/cothe/projects/mcp-shrimp-task-manager/dist/index.js"],
       "env": {
         "DATA_DIR": "/Users/cothe/shrimp_data",
         "TEMPLATES_USE": "en",
@@ -13,10 +11,7 @@
     },
     "shadcn": {
       "command": "npx",
-      "args": [
-        "shadcn@latest",
-        "mcp"
-      ]
+      "args": ["shadcn@latest", "mcp"]
     },
     "context7": {
       "command": "npx",
@@ -30,10 +25,7 @@
     "sequential-thinking": {
       "type": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-sequential-thinking"
-      ],
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
       "env": {}
     }
   }
